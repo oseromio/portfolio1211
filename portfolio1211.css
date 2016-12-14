@@ -1,0 +1,215 @@
+body{
+     font-family: "Tsukushi A round gothic", "santyoume-font";
+       background-color:;
+      }
+
+header{
+  background-color: #E7E7DB;
+  border: 1px solid #E7E7DB;
+  width: 100%;
+  background-color: #E7E7DB;
+  height:60px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header{
+  width: 1170px;
+  margin: 0 auto;
+}
+.header a{
+  text-decoration: none;
+  }
+
+.header-left{
+  float: left;
+  margin:0 auto;
+}
+
+.header-right{
+  float:right;
+}
+
+.header-right li{
+  float: left;
+  color: #4EB4CB;
+  font-size:20px;
+  padding-left: 20px;
+}
+
+.header-right li:hover{
+  color: #2D94FB;
+}
+
+/*ここからtop*/
+.top-wrapper{
+  width: 1170px;
+  margin:0 auto;
+  padding: 0 15px;
+  text-align: center;
+  background-color: #C1DCC6;
+}
+
+.top-image{
+  margin: 0 auto;
+  display: block;
+}
+
+.top-bottom{
+  margin-right: 30px;
+}
+
+
+/*profileはじまり*/
+#profile-wrapper{
+  width: 1170px;
+  height: 500px ;
+  margin:0 auto;
+  padding: 0 15px;
+  background-color: #C1DCC6;
+}
+
+.profile-sizuku{
+  margin-left: 30px;
+  width: 300px;
+  height: 500px;
+  float: left;
+  display: inline-block;
+}
+
+
+.profile-photo{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 100px;
+
+}
+
+.profile-right{
+  display: inline-block;
+  float: right;
+  margin-right: 50px;
+}
+
+.profile-right .title{
+  font-size: 40px;
+  margin:0;
+  text-align: right;
+}
+
+/*skill*/
+
+#skill-wrapper{
+  width: 1170px;
+  height:400px ;
+  margin:0 auto;
+  padding: 0 15px;
+  background-color: #F1EDED;
+}
+
+.skill-text{
+  display: inline-block;
+  float: right;
+}
+.bus{
+  margin-left: 40px;
+}
+
+.box{
+  border: 1px solid white;
+  display: inline-block;
+  float: right;
+  height: 300px;
+  width: 200px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+.title{
+  font-size: 40px;
+  margin:0;
+  text-align: right;
+  margin-right: 50px;
+  color: #2F967D;
+}
+/*works*/
+
+#works-wrapper{
+  width: 1170px;
+  height:800px ;
+  margin:0 auto;
+  padding: 0 15px;
+  background-color: #F1EDED;
+}
+
+.works-title{
+  display: inline-block;
+  float: right;
+}
+
+.works-title ul{
+  float: right;
+  display: inline-block;
+}
+
+.works-title .box{
+  margin-left: 20px;
+  width:300px;
+  height: 400px;
+}
+
+.works-big-title{
+  font-size: 20px;
+  text-align: center;
+}
+
+.works-left{
+  padding-top: 10px;
+}
+
+/*contact*/
+#contact-wrapper{
+  width: 1170px;
+  height: 500px ;
+  margin:0 auto;
+  padding: 0 15px;
+  background-color: #C1DCC6;
+}
+
+.contact-box{
+  border: 1px solid white;
+  height: 400px;
+  width: 800px;
+  margin: 0 auto;
+  background-color:  white;
+  border-radius: 20%;
+}
+
+.button{
+  border-radius: 50%;
+  background-color:#ca3356;
+  width: 60px;
+  height: 60px;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-left: 200px;
+  font-size: 2rem;
+
+}
+
+i{
+
+  font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+
+    font-size: 2rem;
+
+}
