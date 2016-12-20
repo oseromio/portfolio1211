@@ -58,6 +58,7 @@ header{
 
 .top-bottom{
   margin-right: 30px;
+  padding-bottom: 100px;
 }
 
 
@@ -101,7 +102,18 @@ header{
   text-align: right;
 }
 
-/*skill*/
+.title-name{
+  text-align: left;
+  font-size: 30px;
+  margin: 0px;
+}
+
+/*.profile-box{
+  width: 150px;
+  height: 150px;
+}*/
+
+/*skills*/
 
 #skill-wrapper{
   width: 1170px;
@@ -129,6 +141,15 @@ header{
   margin-right: 10px;
 }
 
+.box li{
+  text-align: center;
+}
+.skills-icon{
+  margin: 10px 0;
+  width: 100px;
+  height: 100px;
+  margin-left: 48px;
+}
 .title{
   font-size: 40px;
   margin:0;
@@ -198,11 +219,9 @@ header{
   margin-right: 20px;
   margin-left: 200px;
   font-size: 2rem;
-
 }
 
 i{
-
   font-size: 1rem;
     text-align: center;
     color: #fff;
@@ -211,5 +230,17 @@ i{
             border-radius: 50%;
 
     font-size: 2rem;
+}
 
+/*footer*/
+
+.footer-wrapper{
+  width: 1170px;
+  margin:0 auto;
+  padding: 0 15px;
+  background-color: #ca3356;
+}
+.footer-left{
+  text-align: left;
+  color: white;
 }
