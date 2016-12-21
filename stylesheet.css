@@ -8,36 +8,34 @@
 body {
   /*この下のフォント読み込めてないよ。fontもimageの様に同じフォルダに入れておく必要がある。*/
      font-family: "Tsukushi A round gothic", "santyoume-font";
-     /*背景指定しようとしてる？*/
-       background-color:;
+     /*背景指定しようとしてる？ →消し忘れました・・・*/
       }
 
 header {
-  background-color: #E7E7DB;
-  border: 1px solid #E7E7DB;
-  width: 100%;
-  /*background-colorが2回指定されている*/
-  background-color: #E7E7DB;
-  height:60px;
-  position: fixed;
-  top: 0;
-  z-index: 10;
+    background-color: #E7E7DB;
+    border: 1px solid #E7E7DB;
+    width: 100%;
+    /*background-colorが2回指定されている*/
+    height:60px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 .header {
   /*ヘッダーにwidthは付けほうがいいよ。*/
-  width: 1170px;
-  margin: 0 auto;
+  /*width: 1170px;*/
+    margin: 0 auto;
 }
 
 .header a {
-  text-decoration: none;
+   text-decoration: none;
 }
 
 .header-left {
-  float: left;
+   float: left;
   /*このmarginは要らないんじゃないかな？*/
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 
 .header-right {
@@ -49,18 +47,24 @@ header {
   color: #4EB4CB;
   font-size: 20px;
   padding-left: 20px;
+  margin-right: 30px;
 }
 
 .header-right li:hover {
   color: #2D94FB;
 }
 
-/*ここからtop*/
-.top-wrapper {
-  /* このwidthとmarginとpaddingはcontainerというクラスでまとめた方がいいかも。ProgateのHTML上級とか参考に。*/
+.container{
   width: 1170px;
   margin:0 auto;
   padding: 0 15px;
+}
+/*ここからtop*/
+.top-wrapper {
+  /* このwidthとmarginとpaddingはcontainerというクラスでまとめた方がいいかも。ProgateのHTML上級とか参考に。*/
+  /*width: 1170px;
+  margin:0 auto;
+  padding: 0 15px;*/
   text-align: center;
   /* 画面全体にこの背景適用した方がいいと思うのだけど、どう？*/
   background-color: #C1DCC6;
@@ -69,7 +73,7 @@ header {
 .top-image {
   margin: 0 auto;
   /*block要素にした理由ってある？なければこのコードなくてもいいと思う。img要素は元からinline-blockだからそんなに見た目かわらない。*/
-  display: block;
+  /*display: block;*/
 }
 
 .top-bottom {
@@ -80,10 +84,10 @@ header {
 /*profileはじまり*/
 #profile-wrapper {
   /* このwidth, margin, paddingは何度も使ってるからcontainerという共通のクラスでまとめる*/
-  width: 1170px;
+  /*width: 1170px;*/
   height: 500px ;
-  margin:0 auto;
-  padding: 0 15px;
+  /*margin:0 auto;
+  padding: 0 15px;*/
   /*この背景色もなんどもつかってるから、共通のクラスつくっちゃお。たとえば「.light-green」というクラスにして、そこに背景色指定しておく。*/
   background-color: #C1DCC6;
 }
@@ -133,10 +137,10 @@ header {
 
 #skill-wrapper {
   /* containerクラスにまとめる */
-  width: 1170px;
+  /*width: 1170px;
   height:400px ;
   margin:0 auto;
-  padding: 0 15px;
+  padding: 0 15px;*/
   background-color: #F1EDED;
 }
 
@@ -159,10 +163,16 @@ header {
   margin-right: 10px;
 }
 
-.box li {
+/*.box li {
   text-align: center;
+}*/
+.skill-text li{
+  display: inline-block;
 }
 
+.skill-text p{
+  text-align: center;
+}
 .skills-icon {
   margin: 10px 0;
   width: 100px;
@@ -170,7 +180,7 @@ header {
   margin-left: 48px;
 }
 
-.title {
+#big-title {
   font-size: 40px;
   margin:0;
   text-align: right;
@@ -180,10 +190,10 @@ header {
 
 /*works*/
 #works-wrapper {
-  width: 1170px;
-  height:800px ;
-  margin:0 auto;
-  padding: 0 15px;
+  /*width: 1170px;*/
+  height:600px ;
+  /*margin:0 auto;
+  padding: 0 15px;*/
   background-color: #F1EDED;
 }
 
@@ -191,6 +201,7 @@ header {
   display: inline-block;
   float: right;
 }
+
 
 .works-title ul {
   float: right;
@@ -210,14 +221,59 @@ header {
 
 .works-left {
   padding-top: 10px;
+  display: inline-block;
 }
 
+.go-img{
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.works-left li{
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.works-left p{
+  font-size:15px;
+  width: 280px;
+}
+
+.works-right{
+  display: inline-block;
+  float: right;
+}
+
+.works-right li{
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.works-right img{
+  margin: 0 auto;
+}
+
+.works-right .box{
+    border: 1px solid white;
+    display: inline-block;
+    float: right;
+    height: 430px;
+    width: 300px;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.card{
+ width: 200px;
+ height: auto;
+}
 /*contact*/
 #contact-wrapper {
-  width: 1170px;
+  /*width: 1170px;*/
   height: 500px ;
-  margin:0 auto;
-  padding: 0 15px;
+  /*margin:0 auto;
+  padding: 0 15px;*/
   background-color: #C1DCC6;
 }
 
@@ -242,22 +298,21 @@ header {
 }
 
 /* i要素に全部指定しないほうがいい。「.contact-wrapper i」とかにしよう*/
-i {
-  font-size: 1rem;
-    text-align: center;
-    color: #fff;
+.contact-wrapper i {
+ font-size: 1rem;
+ text-align: center;
+ color: #fff;
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
-
-    font-size: 2rem;
+ font-size: 2rem;
 }
 
 /*footer*/
 .footer-wrapper {
   width: 1170px;
   margin:0 auto;
-  padding: 0 15px;
+  /*padding: 0 15px;*/
   background-color: #ca3356;
 }
 

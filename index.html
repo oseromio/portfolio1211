@@ -6,7 +6,7 @@
   <title>MIO's Portfolio</title>
 
   <!-- ここはサイトに関する説明を入れよう -->
-  <meta name="description" content="デザイナーです。幅広い分野で活躍したいと思っています。">
+  <meta name="description" content="デザイナー志望19歳女子のオリジナルサイトです。">
   <meta name="keywords" content="デザイン,web制作,ポートフォリオ">
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -16,10 +16,9 @@
 <body>
   <header>
     <!-- headerタグでheader-leftとheader-right要素を囲むようにする。headerのdivは不要。 -->
-    <div class="header">
        <div class="header-left">
          <!-- 画像のオリジナルの縦横比を崩してるから、heightをautoにする。あとaltの値はlogoがいいね。 -->
-         <img class="top-btn"src="./image/sizuku.png" alt="mark" width="60px" height="60px">
+         <img class="top-btn"src="./image/sizuku.png" alt="logo" width="60px" height=" auto">
        </div>
 
        <div class="header-right">
@@ -31,15 +30,15 @@
            <li><a href="#contact-wrapper">Contact</a></li>
          </ul>
       </div>
-    </div>
   </header>
 
   <main>
+  <div class="container">
     <div class="top-wrapper">
       <img src="./image/sizuku1.png" class="top-image">
       <div class="top-text">
         <!-- ここ改行したいならbrタグでいいと思う。 -->
-        <p><span>好き</span>なものを<span><br>大好き</span>にする<br>デザイナーを<br>目指しています。</p>
+        <p>好きなものを<br>大好きにする<br>デザイナーを<br>目指しています。</p>
       </div>
       <div class="top-bottom">
         <img src="./image/sisizuku1.png">
@@ -50,9 +49,9 @@
       <div class="profile-left">
         <img src="./image/profile-sizuku1.png" class="profile-sizuku">
       </div>
-      <img src="./image/mioprofile1211.png"  class="profile-photo">
+      <img src="./image/miopro1211.png"  class="profile-photo">
       <div class="profile-right">
-         <p class="title">Profile</p>
+         <div id ="big-title">Profile</div>
          <p style="margin:0px;">Mio Ishiguro</p>
          <p class="title-name">石黒 澪</p>
          <!-- <div class="profile-box"> -->
@@ -69,25 +68,33 @@
       <div class="skill-left">
         <img src="./image/bus.png" class="bus">
         <div class="skill-text">
-          <p class="title">Skills</p>
+          <div id="big-title">Skills</div>
           <ul style="list-style:none;">
             <!-- ulの中の要素は<li>タグで囲み、そのli要素の中でdivタグを使用する。 -->
-            <div class="box">
-              <img src="./image/illustrator.png" class="skills-icon">
-              <li>Illustrator</li>
-            </div>
-            <div class="box">
-              <img src="./image/photoshopicon.png" class="skills-icon">
-              <li>Photoshop</li>
-            </div>
-            <div class="box">
-              <img src="./image/html5.png" class="skills-icon">
-              <li>HTML CSS</li>
-            </div>
+            <li>
+              <div class="box">
+                  <img src="./image/illustrator.png" class="skills-icon">
+                  <p>Illustrator</p>
+              </div>
+           </li>
+            <li>
+              <div class="box">
+                <img src="./image/photoshopicon.png" class="skills-icon">
+                <p>Photoshop</p>
+              </div>
+           </li>
+           <li>
+              <div class="box">
+                <img src="./image/html5.png" class="skills-icon">
+                <p>HTML CSS</p>
+              </div>
+          </li>
+          <li>
             <div class="box">
               <img src="./image/jquery-black.png" class="skills-icon">
-              <li>jQuery</li>
+              <p>jQuery</p>
             </div>
+          </li>
           </ul>
         </div>
       </div>
@@ -95,73 +102,82 @@
 
     <div id="works-wrapper">
       <!-- ここよりしたのインデント修正する。上の入れ子構造を参照。 -->
+     <div class="works-title">
+       <div id="big-title">Works</div>
+     </div>
+
       <div class="works-left">
         <!-- CSSはstylesheet.cssに記述 -->
-         <img src="./image/bus.png" height="700px">
-           <div class="works-title">
-               <p class="title">Works</p>
-               <ul style="list-style:none;">
-             <!-- <li><img src="./image/UTgolang.png"><p>aaaaaa</p></li> -->
-             <!-- <li><img src="./image/meisi.png"><p>aaaaaa</p></li> -->
-                   <div class="box">
+         <img src="./image/bus.png">
+       </div>
+        <div class="works-right">
+            <ul style="list-style:none;">
+                   <li>
+                     <!-- golang -->
+                     <div class="box">
                      <!-- CSSはstylesheet.cssに記述 -->
-                     <li><img src="./image/UTgolang.png" width="150px" height="150px" style="margin:0 auto;">
-                       <p class="works-big-title">UT Golang</p></li>
+                       <img src="./image/UTgolang.png" class="go-img">
+                       <p class="works-big-title">UT Golang</p>
                        <!-- CSSはstylesheet.cssに記述 -->
-                       <p style="font-size:15px;" width="280px">知人がプログラミング言語登壇時に使用できるようGo言語のマークを作成しました。<br>go言語は
+                       <p>知人がプログラミング言語登壇時に使用できるようGo言語のマークを作成しました。<br>go言語は
                          googleの言語なので周りをChromeと同じ彩にしました。またgo言語の公式キャラクターを真ん中に寄せ
                          パッと見てすぐgo言語なのだとわかりやすいように工夫しました。</p>
-                   </div>
-                   <div class="box">
+                    </div>
+                   </li>
+
+                   <li>
+                    <div class="box">
                      <!-- CSSはstylesheet.cssに記述。画像の縦横比は崩れてるから、heightをautoに。インデントも直す -->
-                   <li><img src="./image/meisi.png" width="200px" height="350px"><p >名刺</p>
+                   <img src="./image/meisi.png" class="card">
+                   <p>名刺</p>
                      <!-- CSSはstylesheet.cssに記述 -->
-                   <p style="font-size:15px;" width="280px"></li>
                   </div>
-               </ul>
+                  </li>
+           </ul>
           </div>
-      </div>
-    </div>
+        </div>
 
     <!-- インデント直す -->
+    <!-- contact -->
        <div id="contact-wrapper">
-         <div class="title">Contact</div>
-         <div class="contact-box">
+          <div id="big-title">Contact</div>
+          <div class="contact-box">
              <ul style="list-style:none;">
                <!-- ulの中はli要素で囲む。 -->
-               <div class="box5">
-                  <li>
-                      <button class="button">
+               <li>
+                 <div class="box5">
+                    <button class="button">
                        <a href="mmmochiao@gmail.com">
                          <i class="fa fa-envelope-o"></i>
                        </a>
-                      </button>
-                          mmmochaio@gmail.com
-                 </li>
-               </div>
+                    </button>
+               mmmochaio@gmail.com
+                 </div>
+             </li>
+             <li>
                  <div class="box5">
-                   <li>
                      <button class="button">
                         <a href="https://twitter.com/630_mio_rei">
                           <i class="fa fa-twitter"></i>
                         </a>
                      </button>
                           @630_mio_rei
-                   </li>
                  </div>
+             </li>
+             <li>
                  <div class="box5">
-                   <li>
                       <button class="button">
                         <!-- 一つ上のボタンのコードを参考に以下のコードに改行をいれる -->
                         <a href="https://www.facebook.com/mio.ishiguro.52"><i class="fa fa-facebook-official" aria-hidden="true"></i>
                        </a>
-                     </button>
+                      </button>
                           Mio Ishiguro （石黒 澪）
-                   </li>
                  </div>
+            </li>
             </div>
        </div>
       </div>
+    </div>
   </main>
   <footer>
     <div class="footer-wrapper">
