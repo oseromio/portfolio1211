@@ -7,9 +7,9 @@
 /*インデント修正*/
 body {
   /*この下のフォント読み込めてないよ。fontもimageの様に同じフォルダに入れておく必要がある。*/
-     font-family: "Tsukushi A round gothic", "santyoume-font";
+  font-family: "Tsukushi A round gothic", "santyoume-font";
      /*背景指定しようとしてる？ →消し忘れました・・・*/
-      }
+}
 
 header {
     background-color: #E7E7DB;
@@ -295,6 +295,7 @@ header {
   margin-right: 20px;
   margin-left: 200px;
   font-size: 2rem;
+  border: 0;
 }
 
 /* i要素に全部指定しないほうがいい。「.contact-wrapper i」とかにしよう*/
