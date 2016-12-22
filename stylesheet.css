@@ -15,22 +15,21 @@ header {
     background-color: #E7E7DB;
     border: 1px solid #E7E7DB;
     width: 100%;
-    /*background-colorが2回指定されている*/
     height:60px;
     position: fixed;
     top: 0;
     z-index: 10;
 }
 
-.header {
-  /*ヘッダーにwidthは付けほうがいいよ。*/
-  /*width: 1170px;*/
-    margin: 0 auto;
-}
 
-.header a {
+header a {
    text-decoration: none;
 }
+header a:link { color: #2F967D; }
+a:visited { color: #2F967D; }
+a:hover { color: #2F967D; }
+a:active { color: #2F967D;}
+
 
 .header-left {
    float: left;
@@ -61,13 +60,9 @@ header {
 }
 /*ここからtop*/
 .top-wrapper {
-  /* このwidthとmarginとpaddingはcontainerというクラスでまとめた方がいいかも。ProgateのHTML上級とか参考に。*/
-  /*width: 1170px;
-  margin:0 auto;
-  padding: 0 15px;*/
   text-align: center;
-  /* 画面全体にこの背景適用した方がいいと思うのだけど、どう？*/
-  background-color: #C1DCC6;
+  width: 100%;
+  background-color: #C8DBC5;
 }
 
 .top-image {
@@ -82,14 +77,10 @@ header {
 }
 
 /*profileはじまり*/
-#profile-wrapper {
-  /* このwidth, margin, paddingは何度も使ってるからcontainerという共通のクラスでまとめる*/
-  /*width: 1170px;*/
+#profile {
   height: 500px ;
-  /*margin:0 auto;
-  padding: 0 15px;*/
-  /*この背景色もなんどもつかってるから、共通のクラスつくっちゃお。たとえば「.light-green」というクラスにして、そこに背景色指定しておく。*/
   background-color: #C1DCC6;
+  padding-bottom: 50px;
 }
 
 .profile-sizuku {
@@ -106,14 +97,20 @@ header {
   height: 150px;
   border-radius:50%;
   display: inline-block;
-  margin-left: 50px;
-  margin-top: 100px;
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+.profile-box{
+  width:550px;
+  margin-right: 10px;
 }
 
 .profile-right {
   display: inline-block;
   float: right;
-  margin-right: 50px;
+  margin-left: 30px;
+  margin-top: 40px;
 }
 
 .profile-right .title {
@@ -128,25 +125,20 @@ header {
   margin: 0px;
 }
 
-/*.profile-box{
-  width: 150px;
-  height: 150px;
-}*/
 
 /*skills*/
 
-#skill-wrapper {
-  /* containerクラスにまとめる */
-  /*width: 1170px;
-  height:400px ;
-  margin:0 auto;
-  padding: 0 15px;*/
+#skills{
   background-color: #F1EDED;
 }
 
 .skill-text {
   display: inline-block;
   float: right;
+}
+
+.skill-left{
+  padding-top: 40px;
 }
 
 .bus {
@@ -170,7 +162,7 @@ header {
   display: inline-block;
 }
 
-.skill-text p{
+.box p{
   text-align: center;
 }
 .skills-icon {
@@ -180,7 +172,7 @@ header {
   margin-left: 48px;
 }
 
-#big-title {
+.big-title {
   font-size: 40px;
   margin:0;
   text-align: right;
@@ -189,12 +181,10 @@ header {
 }
 
 /*works*/
-#works-wrapper {
-  /*width: 1170px;*/
+#works{
   height:600px ;
-  /*margin:0 auto;
-  padding: 0 15px;*/
   background-color: #F1EDED;
+  padding-top: 40px;
 }
 
 .works-title {
@@ -202,11 +192,6 @@ header {
   float: right;
 }
 
-
-.works-title ul {
-  float: right;
-  display: inline-block;
-}
 
 .works-title .box {
   margin-left: 20px;
@@ -224,12 +209,16 @@ header {
   display: inline-block;
 }
 
+.works-left img{
+  width: 250px;
+  height: 500px;
+}
+
 .go-img{
   width: 150px;
   height: 150px;
   margin: 0 auto;
 }
-
 .works-left li{
   display: inline-block;
   margin-left: 40px;
@@ -243,38 +232,38 @@ header {
 .works-right{
   display: inline-block;
   float: right;
+  margin-top: 80px;
+  text-align: center;
 }
 
 .works-right li{
   display: inline-block;
-  margin-right: 60px;
+  margin-right: 30px;
 }
 
 .works-right img{
   margin: 0 auto;
 }
 
-.works-right .box{
-    border: 1px solid white;
-    display: inline-block;
-    float: right;
-    height: 430px;
-    width: 300px;
-    background-color: white;
-    margin-right: 10px;
+.works-right .box {
+  border: 1px solid white;
+  display: inline-block;
+  float: right;
+  height: 430px;
+  width: 300px;
+  background-color: white;
+  margin-right: 10px;
 }
 
-.card{
+.card {
  width: 200px;
  height: auto;
 }
 /*contact*/
-#contact-wrapper {
-  /*width: 1170px;*/
+#contact {
   height: 500px ;
-  /*margin:0 auto;
-  padding: 0 15px;*/
   background-color: #C1DCC6;
+  padding-top: 40px;
 }
 
 .contact-box {
@@ -308,12 +297,12 @@ header {
             border-radius: 50%;
  font-size: 2rem;
 }
+.fa {
+  color: white;
+}
 
 /*footer*/
-.footer-wrapper {
-  width: 1170px;
-  margin:0 auto;
-  /*padding: 0 15px;*/
+footer{
   background-color: #ca3356;
 }
 
