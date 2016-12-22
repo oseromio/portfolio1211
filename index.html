@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>MIO's Portfolio</title>
 
-  <!-- ここはサイトに関する説明を入れよう -->
   <meta name="description" content="デザイナー志望19歳女子のオリジナルサイトです。">
   <meta name="keywords" content="デザイン,web制作,ポートフォリオ">
   <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -16,110 +15,101 @@
 
 <body>
   <header>
-    <!-- headerタグでheader-leftとheader-right要素を囲むようにする。headerのdivは不要。 -->
        <div class="header-left">
-         <!-- 画像のオリジナルの縦横比を崩してるから、heightをautoにする。あとaltの値はlogoがいいね。 -->
          <img class="top-btn"src="./image/sizuku.png" alt="logo" width="60px" height=" auto">
        </div>
 
        <div class="header-right">
-         <!-- なるべくCSSはstylesheet.cssに書こう。あとlist-style: none;とかはnormalize.cssていうものがあるからそれをheadで読み込むといいよ -->
          <ul style="list-style:none;">
-           <li><a href="#profile-wrapper">Profile</a></li>
-           <li><a href="#skill-wrapper">Skills</a></li>
-           <li><a href="#works-wrapper">Works</a></li>
-           <li><a href="#contact-wrapper">Contact</a></li>
+           <li><a href="#profile">Profile</a></li>
+           <li><a href="#skills">Skills</a></li>
+           <li><a href="#works">Works</a></li>
+           <li><a href="#contact">Contact</a></li>
          </ul>
       </div>
   </header>
 
   <main>
-  <div class="container">
-    <div class="top-wrapper">
-      <img src="./image/sizuku1.png" class="top-image">
-      <div class="top-text">
-        <!-- ここ改行したいならbrタグでいいと思う。 -->
-        <p>好きなものを<br>大好きにする<br>デザイナーを<br>目指しています。</p>
+        <div class="top-wrapper">
+            <div class="container">
+              <img src="./image/sizuku1.png" class="top-image">
+              <div class="top-text">
+                <p>好きなものを<br>大好きにする<br>デザイナーを<br>目指しています。</p>
+              </div>
+              <div class="top-bottom">
+                <img src="./image/sisizuku1.png">
+              </div>
+           </div>
       </div>
-      <div class="top-bottom">
-        <img src="./image/sisizuku1.png">
+
+
+    <div id="profile">
+      <div class="container">
+        <p class="big-title">Profile</p>
+          <div class="profile-left">
+            <img src="./image/profile-sizuku1.png" class="profile-sizuku">
+          </div>
+          <img src="./image/miopro1211.png"  class="profile-photo">
+          <div class="profile-right">
+             <p style="margin:0px;">Mio Ishiguro</p>
+             <p class="title-name">石黒 澪</p>
+                 <div class="profile-box">
+                 <p>横浜市立大学経営科学系1年</p>
+                 <p>東大起業サークルTNK所属</p>
+                 2016年7月からスタートアップでプロモーション担当としてインターンをしていました。
+                 現在、Progateオフィスで毎日デザイナーに必要な言語・ツールを学んでいます。
+                 デザインの勉強を始めたのは2016年11月からです。
+                 </div>
+          </div>
       </div>
     </div>
 
-    <div id="profile-wrapper">
-      <div class="profile-left">
-        <img src="./image/profile-sizuku1.png" class="profile-sizuku">
-      </div>
-      <img src="./image/miopro1211.png"  class="profile-photo">
-      <div class="profile-right">
-         <div id ="big-title">Profile</div>
-         <p style="margin:0px;">Mio Ishiguro</p>
-         <p class="title-name">石黒 澪</p>
-         <!-- <div class="profile-box"> -->
-         <p>横浜市立大学経営科学系1年</p>
-         <p>東大起業サークルTNK所属</p>
-         <p>2016年7月からスタートアップでプロモーション担当としてインターン。</p>
-         <p>現在、Progateオフィスで毎日デザイナーに必要な言語・ツールを学んでいます。</p>
-         <p>デザインの勉強を始めたのは2016年11月からです。</p>
-         <!-- </div> -->
-      </div>
-    </div>
-
-    <div id="skill-wrapper">
-      <div class="skill-left">
-        <img src="./image/bus.png" class="bus">
-        <div class="skill-text">
-          <div id="big-title">Skills</div>
-          <ul style="list-style:none;">
-            <!-- ulの中の要素は<li>タグで囲み、そのli要素の中でdivタグを使用する。 -->
-            <li>
-              <div class="box">
-                  <img src="./image/illustrator.png" class="skills-icon">
-                  <p>Illustrator</p>
+    <div id="skills">
+     <div class="container">
+            <div class="skill-left">
+              <img src="./image/bus.png" class="bus">
+              <div class="skill-text">
+                <p class="big-title">Skills</p>
+                <ul>
+                  <!-- ulの中の要素は<li>タグで囲み、そのli要素の中でdivタグを使用する。 -->
+                  <li class="box">
+                        <img src="./image/illustrator.png" class="skills-icon">
+                        <p>Illustrator</p>
+                 </li>
+                  <li class="box">
+                      <img src="./image/photoshopicon.png" class="skills-icon">
+                      <p>Photoshop</p>
+                 </li>
+                 <li class="box">
+                      <img src="./image/html5.png" class="skills-icon">
+                      <p>HTML CSS</p>
+                </li>
+                <li class="box">
+                    <img src="./image/jquery-black.png" class="skills-icon">
+                    <p>jQuery</p>
+                </li>
+                </ul>
               </div>
-           </li>
-            <li>
-              <div class="box">
-                <img src="./image/photoshopicon.png" class="skills-icon">
-                <p>Photoshop</p>
-              </div>
-           </li>
-           <li>
-              <div class="box">
-                <img src="./image/html5.png" class="skills-icon">
-                <p>HTML CSS</p>
-              </div>
-          </li>
-          <li>
-            <div class="box">
-              <img src="./image/jquery-black.png" class="skills-icon">
-              <p>jQuery</p>
             </div>
-          </li>
-          </ul>
         </div>
-      </div>
     </div>
 
-    <div id="works-wrapper">
-      <!-- ここよりしたのインデント修正する。上の入れ子構造を参照。 -->
-     <div class="works-title">
-       <div id="big-title">Works</div>
-     </div>
+    <div id="works">
+      <div class="container">
+          <div class="works-title">
+             <p class="big-title">Works</p>
+          </div>
 
-      <div class="works-left">
-        <!-- CSSはstylesheet.cssに記述 -->
-         <img src="./image/bus.png">
-       </div>
-        <div class="works-right">
-            <ul style="list-style:none;">
+          <div class="works-left">
+             <img src="./image/bus.png">
+           </div>
+          <div class="works-right">
+            <ul>
                    <li>
                      <!-- golang -->
                      <div class="box">
-                     <!-- CSSはstylesheet.cssに記述 -->
                        <img src="./image/UTgolang.png" class="go-img">
                        <p class="works-big-title">UT Golang</p>
-                       <!-- CSSはstylesheet.cssに記述 -->
                        <p>知人がプログラミング言語登壇時に使用できるようGo言語のマークを作成しました。<br>go言語は
                          googleの言語なので周りをChromeと同じ彩にしました。またgo言語の公式キャラクターを真ん中に寄せ
                          パッと見てすぐgo言語なのだとわかりやすいように工夫しました。</p>
@@ -128,62 +118,57 @@
 
                    <li>
                     <div class="box">
-                     <!-- CSSはstylesheet.cssに記述。画像の縦横比は崩れてるから、heightをautoに。インデントも直す -->
-                   <img src="./image/meisi.png" class="card">
+                   <img src="./image/meishi.png" class="card">
                    <p>名刺</p>
-                     <!-- CSSはstylesheet.cssに記述 -->
                   </div>
                   </li>
            </ul>
           </div>
         </div>
+        </div>
 
-    <!-- インデント直す -->
     <!-- contact -->
-       <div id="contact-wrapper">
-          <div id="big-title">Contact</div>
-          <div class="contact-box">
-             <ul style="list-style:none;">
-               <!-- ulの中はli要素で囲む。 -->
-               <li>
-                 <div class="box5">
-                    <button class="button">
-                       <a href="mmmochiao@gmail.com">
-                         <i class="fa fa-envelope-o"></i>
-                       </a>
-                    </button>
-               mmmochaio@gmail.com
-                 </div>
-             </li>
-             <li>
-                 <div class="box5">
-                     <button class="button">
-                        <a href="https://twitter.com/630_mio_rei">
-                          <i class="fa fa-twitter"></i>
-                        </a>
-                     </button>
-                          @630_mio_rei
-                 </div>
-             </li>
-             <li>
-                 <div class="box5">
-                      <button class="button">
-                        <!-- 一つ上のボタンのコードを参考に以下のコードに改行をいれる -->
-                        <a href="https://www.facebook.com/mio.ishiguro.52"><i class="fa fa-facebook-official" aria-hidden="true"></i>
-                       </a>
-                      </button>
+       <div id="contact">
+          <div class="container">
+              <p class="big-title">Contact</p>
+              <div class="contact-box">
+                 <ul style="list-style:none;">
+                   <li class="box5">
+                        <button class="button">
+                           <a href="mmmochiao@gmail.com">
+                             <i class="fa fa-envelope-o"></i>
+                           </a>
+                        </button>
+                   mmmochaio@gmail.com
+                 </li>
+                 <li class="box5">
+                         <button class="button">
+                            <a href="https://twitter.com/630_mio_rei">
+                              <i class="fa fa-twitter"></i>
+                            </a>
+                         </button>
+                              @630_mio_rei
+                 </li>
+                 <li class="box5">
+                          <button class="button">
+                              <a href="https://www.facebook.com/mio.ishiguro.52">
+                                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                              </a>
+                          </button>
                           Mio Ishiguro （石黒 澪）
-                 </div>
-            </li>
+                </li>
             </div>
        </div>
-      </div>
+     </div>
+
     </div>
   </main>
   <footer>
-    <div class="footer-wrapper">
-       <div class="footer-left">Mio Ishiguro</div>
-    </div>
+     <div class="container">
+          <div class="footer-wrapper">
+             <div class="footer-left">Mio Ishiguro</div>
+          </div>
+     </div>
   </footer>
    <script type="text/javascript" src="script.js"></script>
 </body>
