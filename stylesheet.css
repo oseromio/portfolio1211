@@ -1,77 +1,89 @@
-body{
-     font-family: "Tsukushi A round gothic", "santyoume-font";
-       background-color:;
-      }
+/* TODO:
+  全体的インデント修正
+  共通化できるcssは一つのクラスにまとめる。text-align、float、色とか
+  fontをレポジトリに追加する
+*/
 
-header{
-  background-color: #E7E7DB;
-  border: 1px solid #E7E7DB;
-  width: 100%;
-  background-color: #E7E7DB;
-  height:60px;
-  position: fixed;
-  top: 0;
-  z-index: 10;
+/*インデント修正*/
+body {
+  /*この下のフォント読み込めてないよ。fontもimageの様に同じフォルダに入れておく必要がある。*/
+  font-family: "Tsukushi A round gothic", "santyoume-font";
+     /*背景指定しようとしてる？ →消し忘れました・・・*/
 }
 
-.header{
-  width: 1170px;
-  margin: 0 auto;
-}
-.header a{
-  text-decoration: none;
-  }
-
-.header-left{
-  float: left;
-  margin: 0 auto;
+header {
+    background-color: #E7E7DB;
+    border: 1px solid #E7E7DB;
+    width: 100%;
+    height:60px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
-.header-right{
+
+header a {
+   text-decoration: none;
+}
+header a:link { color: #2F967D; }
+a:visited { color: #2F967D; }
+a:hover { color: #2F967D; }
+a:active { color: #2F967D;}
+
+
+.header-left {
+   float: left;
+  /*このmarginは要らないんじゃないかな？*/
+  /*margin: 0 auto;*/
+}
+
+.header-right {
   float:right;
 }
 
-.header-right li{
+.header-right li {
   float: left;
   color: #4EB4CB;
-  font-size:20px;
+  font-size: 20px;
   padding-left: 20px;
+  margin-right: 30px;
 }
 
-.header-right li:hover{
+.header-right li:hover {
   color: #2D94FB;
 }
 
-/*ここからtop*/
-.top-wrapper{
+.container{
   width: 1170px;
   margin:0 auto;
   padding: 0 15px;
+}
+/*ここからtop*/
+.top-wrapper {
   text-align: center;
-  background-color: #C1DCC6;
+  width: 100%;
+  background-color: #C8DBC5;
 }
 
-.top-image{
+.top-image {
   margin: 0 auto;
-  display: block;
+  /*block要素にした理由ってある？なければこのコードなくてもいいと思う。img要素は元からinline-blockだからそんなに見た目かわらない。*/
+  /*display: block;*/
 }
 
-.top-bottom{
+.top-bottom {
   margin-right: 30px;
   padding-bottom: 100px;
 }
 
-
 /*profileはじまり*/
-#profile-wrapper{
-  width: 1170px;
+#profile {
   height: 500px ;
-  margin:0 auto;
-  padding: 0 15px;
   background-color: #C1DCC6;
+  padding-bottom: 50px;
 }
 
-.profile-sizuku{
+.profile-sizuku {
   margin-left: 30px;
   width: 300px;
   height: 500px;
@@ -79,59 +91,61 @@ header{
   display: inline-block;
 }
 
-
-.profile-photo{
-  width:150px;
-  height:150px;
+/*縦横比崩れてるから、元画像正方形にしたほうがいいね。*/
+.profile-photo {
+  width: 150px;
+  height: 150px;
   border-radius:50%;
   display: inline-block;
-  margin-left: 50px;
-  margin-top: 100px;
-
+  margin-left: 90px;
+  margin-top: 50px;
 }
 
-.profile-right{
+.profile-box{
+  width:550px;
+  margin-right: 10px;
+}
+
+.profile-right {
   display: inline-block;
   float: right;
-  margin-right: 50px;
+  margin-left: 30px;
+  margin-top: 40px;
 }
 
-.profile-right .title{
+.profile-right .title {
   font-size: 40px;
   margin:0;
   text-align: right;
 }
 
-.title-name{
+.title-name {
   text-align: left;
   font-size: 30px;
   margin: 0px;
 }
 
-/*.profile-box{
-  width: 150px;
-  height: 150px;
-}*/
 
 /*skills*/
 
-#skill-wrapper{
-  width: 1170px;
-  height:400px ;
-  margin:0 auto;
-  padding: 0 15px;
+#skills{
   background-color: #F1EDED;
 }
 
-.skill-text{
+.skill-text {
   display: inline-block;
   float: right;
 }
-.bus{
+
+.skill-left{
+  padding-top: 40px;
+}
+
+.bus {
   margin-left: 40px;
 }
 
-.box{
+.box {
   border: 1px solid white;
   display: inline-block;
   float: right;
@@ -141,67 +155,118 @@ header{
   margin-right: 10px;
 }
 
-.box li{
+/*.box li {
+  text-align: center;
+}*/
+.skill-text li{
+  display: inline-block;
+}
+
+.box p{
   text-align: center;
 }
-.skills-icon{
+.skills-icon {
   margin: 10px 0;
   width: 100px;
   height: 100px;
   margin-left: 48px;
 }
-.title{
+
+.big-title {
   font-size: 40px;
   margin:0;
   text-align: right;
   margin-right: 50px;
   color: #2F967D;
 }
+
 /*works*/
-
-#works-wrapper{
-  width: 1170px;
-  height:800px ;
-  margin:0 auto;
-  padding: 0 15px;
+#works{
+  height:600px ;
   background-color: #F1EDED;
+  padding-top: 40px;
 }
 
-.works-title{
+.works-title {
   display: inline-block;
   float: right;
 }
 
-.works-title ul{
-  float: right;
-  display: inline-block;
-}
 
-.works-title .box{
+.works-title .box {
   margin-left: 20px;
   width:300px;
   height: 400px;
 }
 
-.works-big-title{
+.works-big-title {
   font-size: 20px;
   text-align: center;
 }
 
-.works-left{
+.works-left {
   padding-top: 10px;
+  display: inline-block;
 }
 
+.works-left img{
+  width: 250px;
+  height: 500px;
+}
+
+.go-img{
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+.works-left li{
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.works-left p{
+  font-size:15px;
+  width: 280px;
+}
+
+.works-right{
+  display: inline-block;
+  float: right;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.works-right li{
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.works-right img{
+  margin: 0 auto;
+}
+
+.works-right .box {
+  border: 1px solid white;
+  display: inline-block;
+  float: right;
+  height: 430px;
+  width: 300px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+.card {
+ width: 200px;
+ height: auto;
+}
 /*contact*/
-#contact-wrapper{
-  width: 1170px;
+#contact {
   height: 500px ;
-  margin:0 auto;
-  padding: 0 15px;
   background-color: #C1DCC6;
+  padding-top: 40px;
 }
 
-.contact-box{
+.contact-box {
   border: 1px solid white;
   height: 400px;
   width: 800px;
@@ -210,7 +275,7 @@ header{
   border-radius: 20%;
 }
 
-.button{
+.button {
   border-radius: 50%;
   background-color:#ca3356;
   width: 60px;
@@ -219,27 +284,28 @@ header{
   margin-right: 20px;
   margin-left: 200px;
   font-size: 2rem;
+  border: 0;
 }
 
-i{
-  font-size: 1rem;
-    text-align: center;
-    color: #fff;
+/* i要素に全部指定しないほうがいい。「.contact-wrapper i」とかにしよう*/
+.contact-wrapper i {
+ font-size: 1rem;
+ text-align: center;
+ color: #fff;
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
-
-    font-size: 2rem;
+ font-size: 2rem;
+}
+.fa {
+  color: white;
 }
 
 /*footer*/
-
-.footer-wrapper{
-  width: 1170px;
-  margin:0 auto;
-  padding: 0 15px;
+footer{
   background-color: #ca3356;
 }
+
 .footer-left{
   text-align: left;
   color: white;
